@@ -1,0 +1,37 @@
+Initial Processes:
+PID     AT      BT
+P1      0       6
+P2      2       8
+P3      4       7
+P4      6       3
+P5      8       4
+
+===== FCFS Scheduling =====
+PID     AT      BT      CT      TAT     WT
+P1      0       6       6       6       0
+P2      2       8       14      12      4
+P3      4       7       21      17      10
+P4      6       3       24      18      15
+P5      8       4       28      20      16
+
+Gantt Chart:
+| P1 | P2 | P3 | P4 | P5 |
+0       6       14      21      24      28
+
+FCFS Avg TAT: 14.60
+FCFS Avg WT: 9.00
+
+===== SJF Scheduling =====
+PID     AT      BT      CT      TAT     WT
+P1      0       6       6       6       0
+P2      2       8       28      26      18
+P3      4       7       20      16      9
+P4      6       3       9       3       0
+P5      8       4       13      5       1
+
+Gantt Chart:
+| P1 | P4 | P5 | P3 | P2 |
+0       6       9       13      20      28
+
+SJF Avg TAT: 11.20
+SJF Avg WT: 5.60
