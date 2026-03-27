@@ -1,0 +1,29 @@
+Need Matrix:
+[7, 4, 3]
+[1, 2, 2]
+[6, 0, 0]
+[0, 1, 1]
+[4, 3, 1]
+
+Process P1 is executing
+Work before: [3, 3, 2]
+Work after: [5, 3, 2]
+
+Process P3 is executing
+Work before: [5, 3, 2]
+Work after: [7, 4, 3]
+
+Process P4 is executing
+Work before: [7, 4, 3]
+Work after: [7, 4, 5]
+
+Process P0 is executing
+Work before: [7, 4, 5]
+Work after: [7, 5, 5]
+
+Process P2 is executing
+Work before: [7, 5, 5]
+Work after: [10, 5, 7]
+
+System is in SAFE STATE
+Safe Sequence: P1 -> P3 -> P4 -> P0 -> P2
