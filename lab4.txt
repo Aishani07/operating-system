@@ -1,0 +1,32 @@
+Sample Input and Output:
+
+Enter number of requests: 8
+Enter request sequence: 98 183 37 122 14 124 65 67
+Enter initial head position: 53
+Enter disk size: 200
+
+FCFS Sequence: [98, 183, 37, 122, 14, 124, 65, 67]
+Total Seek Time: 640
+
+SSTF Sequence: [65, 67, 37, 14, 98, 122, 124, 183]
+Total Seek Time: 236
+
+SCAN Sequence: [65, 67, 98, 122, 124, 183, 37, 14]
+Total Seek Time: 331
+
+C-SCAN Sequence: [65, 67, 98, 122, 124, 183, 14, 37]
+Total Seek Time: 382
+
+
+
+Task 7: Result Analysis
+Best Performance: SSTF (minimum seek time)
+Worst Performance: FCFS (no optimization)
+Pros & Cons
+FCFS: Simple but inefficient
+SSTF: Fast but may cause starvation
+SCAN: Balanced performance
+C-SCAN: Uniform wait time but slightly higher movement
+Conclusion
+
+SSTF performs best in terms of seek time, but SCAN/C-SCAN are preferred in real systems for fairness.
