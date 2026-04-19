@@ -1,0 +1,21 @@
+Sample Input and Output:
+
+Enter number of frames: 3
+Enter page reference string: 7 0 1 2 0 3 0 4 2 3 0 3 2
+
+FIFO Page Faults: 10
+LRU Page Faults: 9
+Optimal Page Faults: 7
+MRU Page Faults: 11
+
+Task 7: Result Analysis
+Best Algorithm: Optimal (least faults)
+Worst Algorithm: MRU
+Pros & Cons
+FIFO: Easy but inefficient
+LRU: Good practical performance
+Optimal: Best but not implementable in real-time
+MRU: Works in special cases only
+Conclusion
+
+Optimal gives minimum faults, but LRU is most practical due to good balance of performance and feasibility.
